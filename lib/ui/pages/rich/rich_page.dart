@@ -524,36 +524,57 @@ class _RichPageState extends State<RichPage> with TickerProviderStateMixin {
                             children: <Widget>[
                               GestureDetector(
                                 onTap: () {
-                                  ToastUtil.openToast("功能待开放");
-//                                              NavigatorUtil.push(
-//                                                  context, RichRouter.recharge+"?token="+model.walletToken);
+                                  // ToastUtil.openToast("功能待开放");
+                                  // NavigatorUtil.push(
+                                  //     context,
+                                  //     RichRouter.recharge +
+                                  //         "?token=" +
+                                  //         model.walletToken);
+                                  NavigatorUtil.pushResult(
+                                      context,
+                                      RichRouter.recharge +
+                                          "?token=" +
+                                          model.walletToken, (res) {
+                                    model.initData();
+                                    setState(() {});
+                                  });
                                 },
-                                child: Image.asset(
-                                    'assets/images/rich/icon_chong.png',
-                                    width: 36.w,
-                                    height: 36.w),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 18.w),
-                                child: Text(
-                                  "充币",
-                                  style: Styles.theme(
-                                      fontSize: 28.sp,
-                                      color: Styles.colorB1C6EA,
-                                      fontWeight: FontWeight.bold),
+                                child: Row(
+                                  children: <Widget>[
+                                    Image.asset(
+                                        'assets/images/rich/icon_chong.png',
+                                        width: 36.w,
+                                        height: 36.w),
+                                    Padding(
+                                      padding: EdgeInsets.only(left: 18.w),
+                                      child: Text(
+                                        "充币",
+                                        style: Styles.theme(
+                                            fontSize: 28.sp,
+                                            color: Styles.colorB1C6EA,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                              )
+                              ),
                             ],
                           ),
                           GestureDetector(
                             onTap: () {
-                              ToastUtil.openToast("功能待开放");
+                              // ToastUtil.openToast("功能待开放");
 //                              NavigatorUtil.pushResult(
 //                                  context, RichRouter.withdraw + "?type=1",
 //                                  (res) {
 //                                model.initData();
 //                                setState(() {});
 //                              });
+                              NavigatorUtil.pushResult(
+                                  context, RichRouter.withdraw + "?type=1",
+                                  (res) {
+                                model.initData();
+                                setState(() {});
+                              });
                             },
                             child: Row(
                               children: <Widget>[
@@ -574,13 +595,19 @@ class _RichPageState extends State<RichPage> with TickerProviderStateMixin {
                           ),
                           GestureDetector(
                             onTap: () {
-                              ToastUtil.openToast("功能待开放");
+                              // ToastUtil.openToast("功能待开放");
 //                              NavigatorUtil.pushResult(
 //                                  context, RichRouter.transfer + "?type=1",
 //                                  (res) {
 //                                model.initData();
 //                                setState(() {});
 //                              });
+                              NavigatorUtil.pushResult(
+                                  context, RichRouter.transfer + "?type=1",
+                                  (res) {
+                                model.initData();
+                                setState(() {});
+                              });
                             },
                             child: Row(
                               children: <Widget>[
