@@ -45,7 +45,7 @@ class _AppDownloadPageState extends State<AppDownloadPage> {
                     )),
                 child: FlatButton(
                   onPressed: () {
-                    _launchInBrowser("https://v9app.xuedian.wang/LcwF");
+                    _launchInBrowser("http://app.yunxun.vandapro.com.cn/download/");
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
