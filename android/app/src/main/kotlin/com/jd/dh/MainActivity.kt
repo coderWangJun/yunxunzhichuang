@@ -1,4 +1,4 @@
-package com.jd.dh
+package com.yunxunzhichuang
 
 import io.flutter.embedding.android.FlutterActivity
 
