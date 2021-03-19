@@ -79,7 +79,7 @@ class InvitePage extends StatelessWidget {
                       children: <Widget>[
                         Text("欢迎注册",
                             style: TextStyle(fontSize: 28.sp, color: Colors.white)),
-                        Text("加入道和矿池",
+                        Text("加入云讯智创",
                             style: TextStyle(fontSize: 28.sp, color: Colors.white)),
                       ],
                     ),

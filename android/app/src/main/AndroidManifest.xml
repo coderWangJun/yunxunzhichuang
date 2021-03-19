@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="道和矿池"
+        android:label="云讯智创"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

@@ -88,7 +88,7 @@ class _RechargePageState extends State<RechargePage> {
                             Padding(
                               padding: EdgeInsets.only(left: 10.w),
                               child: Text(
-                                rechargeType == 0 ? "USDT(ERC20)" : "Fil",
+                                rechargeType == 0 ? "USDT(TRC20)" : "Fil",
                                 style: Styles.theme(
                                     color: Styles.colorWhite,
                                     fontSize: 32.sp,

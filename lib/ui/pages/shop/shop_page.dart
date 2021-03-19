@@ -143,7 +143,7 @@ padding: EdgeInsets.only(top: 20.h),
                             borderRadius:
                             BorderRadius.all(Radius.circular(20.w))),
                         child: Text(
-                          '道和矿池-简单、安全、稳定、专业',
+                          '云讯智创-简单、安全、稳定、专业',
                           style: TextStyle(color: Styles.colorFFFFFF),
                         ),
                       ),

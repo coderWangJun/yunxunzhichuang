@@ -12,8 +12,8 @@ class Constants {
   static const String successCode = "0000";
 
   /// api host
-  static const API_HOST_DEV = 'http://road.dhtxcapital.com/';
-  static const API_HOST_PROD = 'http://road.dhtxcapital.com/';
+  static const API_HOST_DEV = 'http://app.yunxun.vandapro.com.cn/';
+  static const API_HOST_PROD = 'http://app.yunxun.vandapro.com.cn/';
 
   //用户TOKEN
   static const String TOKEN_KEY = "token";

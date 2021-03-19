@@ -80,7 +80,7 @@ class _RichPageState extends State<AppPage> {
                           margin: EdgeInsets.only(top: 176.h, left: 64.w),
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            "道和天下",
+                            "云讯智创",
                             style: Styles.theme(
                                 fontSize: 48.sp,
                                 color: Styles.colorWhite,
