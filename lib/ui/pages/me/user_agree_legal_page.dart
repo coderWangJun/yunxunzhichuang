@@ -32,6 +32,8 @@ class _UserAgreeLegalPageState extends State<UserAgreeLegalPage> {
             model.initUserLegal(widget.type);
           },
           builder: (ctx,model,child) {
+            print('model.aboutPageEntity.content============== ${model.aboutPageEntity.content}');
+            
             return Container(
               child: HtmlWidget(
                 model.aboutPageEntity.content ?? "",

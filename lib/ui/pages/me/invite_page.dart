@@ -78,65 +78,66 @@ class InvitePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text("欢迎注册",
-                            style: TextStyle(fontSize: 28.sp, color: Colors.white)),
+                            style: TextStyle(
+                                fontSize: 28.sp, color: Colors.white)),
                         Text("加入云迅智创",
-                            style: TextStyle(fontSize: 28.sp, color: Colors.white)),
+                            style: TextStyle(
+                                fontSize: 28.sp, color: Colors.white)),
                       ],
                     ),
                   ),
                   Positioned(
-                    bottom: 60.h,
-                    child: Container(
-                      width: 750.w,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          Container(
-                            width: 280.w,
-                            height: 80.h,
-                            decoration: BoxDecoration(
-                                color: Color(0xff4D97F7),
-                                borderRadius: BorderRadius.circular(10.w)),
-                            child: FlatButton(
-                              onPressed: () async {
-                                if (Platform.isIOS) {
-                                  _saveInvite();
-                                } else {
-                                  await handlePhotosPermission();
-                                  _saveInvite();
-                                }
-                              },
-                              child: Text(
-                                "保存海报至相册",
-                                style: TextStyle(
-                                    fontSize: 28.sp, color: Colors.white),
+                      bottom: 60.h,
+                      child: Container(
+                        width: 750.w,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            Container(
+                              width: 280.w,
+                              height: 80.h,
+                              decoration: BoxDecoration(
+                                  color: Color(0xff4D97F7),
+                                  borderRadius: BorderRadius.circular(10.w)),
+                              child: FlatButton(
+                                onPressed: () async {
+                                  if (Platform.isIOS) {
+                                    _saveInvite();
+                                  } else {
+                                    await handlePhotosPermission();
+                                    _saveInvite();
+                                  }
+                                },
+                                child: Text(
+                                  "保存海报至相册",
+                                  style: TextStyle(
+                                      fontSize: 28.sp, color: Colors.white),
+                                ),
                               ),
                             ),
-                          ),
-                          Container(
-                            width: 280.w,
-                            height: 80.h,
-                            decoration: BoxDecoration(
-                                color: Color(0xff4D97F7),
-                                borderRadius: BorderRadius.circular(10.w)),
-                            child: FlatButton(
-                              onPressed: () async {
-                                ClipboardData data = new ClipboardData(
-                                    text: model.url);
-                                Clipboard.setData(data);
-                                ToastUtil.openToast('复制成功');
-                              },
-                              child: Text(
-                                "复制邀请链接",
-                                style: TextStyle(
-                                    fontSize: 28.sp, color: Colors.white),
+                            Container(
+                              width: 280.w,
+                              height: 80.h,
+                              decoration: BoxDecoration(
+                                  color: Color(0xff4D97F7),
+                                  borderRadius: BorderRadius.circular(10.w)),
+                              child: FlatButton(
+                                onPressed: () async {
+                                  ClipboardData data =
+                                      new ClipboardData(text: model.url);
+                                  Clipboard.setData(data);
+                                  ToastUtil.openToast('复制成功');
+                                },
+                                child: Text(
+                                  "复制邀请链接",
+                                  style: TextStyle(
+                                      fontSize: 28.sp, color: Colors.white),
+                                ),
                               ),
-                            ),
-                          )
-                        ],
-                      ),
-                    )
-                  ),
+                            )
+                          ],
+                        ),
+                      )),
                 ],
               ),
             ),
